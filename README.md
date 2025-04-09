@@ -1,16 +1,32 @@
-## Hi there 👋
+### Hi there, I'm Hamza Hassan 👋  
+_A software (read: **Product**) engineer living one git-commit at a time._
 
-<!--
-**0xhssn/0xhssn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+With over 5 years of experience, I specialize in building and deploying software solutions in AI, blockchain, and Web3. 
+From designing secure backend systems to creating seamless user interfaces, I'm passionate about crafting high-quality software. 
 
-Here are some ideas to get you started:
+Currently maintaining [jotai-transaction](https://github.com/jotaijs/jotai-transaction), a tiny library adding transaction support to Jotai state management - contributions welcome!
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+<div align="center">
+
+### 🛠 My Skill Set
+
+  
+| **Languages**     | **Frameworks**      | **Cloud**       | **Databases**  |
+|-------------------|---------------------|-----------------|----------------|
+| TypeScript        | Next.js (React)     | AWS             | PostgreSQL     |
+| JavaScript        | Node.js (NestJS)    | Serverless      | MySQL          |
+| Ruby              | Ruby on Rails       | Kubernetes      | MongoDB        |
+| Python            | Gatsby              | CI/CD pipelines | Amazon RDS     |
+| GO                | Gin                 |                 |                |
+| GraphQL           |                     |                 |                |
+
+</div>
+
+---
+
+### 📫 Get in Touch
+- **LinkedIn:** [hhssnn](https://www.linkedin.com/in/hhssnn)
+- **Email:** hassanhamza0101@gmail.com
+
+Feel free to reach out if you want to connect or collaborate on exciting projects!
