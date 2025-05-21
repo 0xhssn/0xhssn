@@ -4,7 +4,7 @@ _A software (read: **Product**) engineer living one git-commit at a time._
 With over 5 years of experience, I specialize in building and deploying software solutions in AI (both LLM training and integrating agents), blockchain, and Web3. 
 From designing secure backend systems to creating seamless user interfaces, I'm passionate about crafting high-quality software. Skilled in event-driven architecture, cloud infrastructure and handling smart contracts, I thrive in collaborative environments and enjoy learning new technologies.
 
-Currently maintaining [jotai-transaction](https://github.com/jotaijs/jotai-transaction), a utility package adding transaction support to Jotai state management - contributions welcome!
+Currently maintaining [jotai-transaction](https://github.com/jotaijs/jotai-transaction), a utility package adding transaction support to [Jotai](https://github.com/pmndrs/jotai) state management - contributions welcome!
 
 ---
 <div align="center">
