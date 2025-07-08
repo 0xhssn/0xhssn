@@ -18,7 +18,7 @@ Currently maintaining [jotai-transaction](https://github.com/jotaijs/jotai-trans
 | JavaScript        | Node.js (NestJS)    | Serverless      | MySQL          |
 | Ruby              | Ruby on Rails       | Kubernetes      | MongoDB        |
 | Python            | Gatsby              | CI/CD pipelines | Amazon RDS     |
-| GO                | Gin                 |                 |                |
+| GO                | Gin                 | Pulumi          |                |
 | GraphQL           |                     |                 |                |
 
 </div>
