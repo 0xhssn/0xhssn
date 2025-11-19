@@ -28,5 +28,3 @@ Currently maintaining [jotai-transaction](https://github.com/jotaijs/jotai-trans
 ### 📫 Get in Touch
 - **LinkedIn:** [hhssnn](https://www.linkedin.com/in/hhssnn)
 - **Email:** hassanhamza0101@gmail.com
-
-Feel free to reach out if you want to connect or collaborate on exciting projects!
