@@ -1,7 +1,7 @@
 ### Hi there, I'm Hamza Hassan 👋  
 _A software (read: **Product**) engineer living one git-commit at a time._
 
-With over 5 years of experience, I specialize in building and deploying software solutions in AI and SaaS. From designing secure backend systems to creating seamless user interfaces, I'm passionate about crafting high-quality software. Skilled in event-driven architecture, cloud infrastructure, and RLHF pipelines, I've worked on training and fine-tuning LLMs through human feedback, preference modeling, and Rubric design. I thrive in collaborative environments and enjoy learning new technologies.
+I specialize in building and deploying software solutions in AI and SaaS. From designing secure backend systems to creating seamless user interfaces, I'm passionate about crafting high-quality software. Skilled in event-driven architecture, cloud infrastructure, and RLHF pipelines, I've worked on training and fine-tuning LLMs through human feedback, preference modeling, and Rubric design. I thrive in collaborative environments and enjoy learning new technologies.
 
 Currently maintaining 2 open-source packages 👇
 
