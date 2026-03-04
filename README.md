@@ -11,21 +11,45 @@ Currently maintaining 2 open-source packages 👇
 Contributions welcome!
 
 ---
-<div align="center">
 
 ### 🛠 My Skill Set
 
-  
-| **Languages**     | **Frameworks**      | **Cloud**       | **Databases**  |
-|-------------------|---------------------|-----------------|----------------|
-| TypeScript        | Next.js (React)     | AWS             | PostgreSQL     |
-| JavaScript        | Node.js (NestJS)    | Serverless      | MySQL          |
-| Ruby              | Ruby on Rails       | Kubernetes      | MongoDB        |
-| Python            | Gatsby              | CI/CD pipelines | Amazon RDS     |
-| GO                | Gin                 | Pulumi          |                |
-| GraphQL           |                     |                 |                |
+#### **Programming Languages**
+- **TypeScript** | **JavaScript** | **Python** | **Ruby** | **GO**
 
-</div>
+#### **Frontend Development**
+- **Frameworks:** Next.js, React, Gatsby
+- **State Management:** Jotai
+- **UI/UX:** Responsive design, Component-driven architecture
+
+#### **Backend Development**
+- **Node.js:** NestJS, Express
+- **Ruby:** Ruby on Rails
+- **GO:** Gin framework
+- **API Design:** REST, GraphQL
+
+#### **Cloud & Infrastructure**
+- **Cloud Platforms:** AWS (EC2, Lambda, S3, RDS, CloudFront)
+- **Infrastructure as Code:** Pulumi, Terraform
+- **Containerization:** Docker, Kubernetes
+- **Serverless Architecture:** AWS Lambda, API Gateway
+- **CI/CD:** GitHub Actions, GitLab CI, Jenkins
+
+#### **Databases & Storage**
+- **Relational:** PostgreSQL, MySQL, Amazon RDS
+- **NoSQL:** MongoDB
+- **Caching:** Redis
+- **Data Modeling:** Schema design, Query optimization
+
+#### **AI & Machine Learning**
+- **LLM Training:** Fine-tuning, RLHF pipelines
+- **Preference Modeling:** Human feedback integration
+- **Rubric Design:** Evaluation frameworks
+
+#### **Architecture & Design**
+- **Event-Driven Architecture:** Message queues, Event sourcing
+- **Microservices:** Service decomposition, API gateways
+- **System Design:** Scalability, High availability, Security best practices
 
 ---
 
