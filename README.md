@@ -86,3 +86,31 @@ Effective monitoring and observability practices are crucial for maintaining and
    - Integrate with APM tools like New Relic or Datadog to get insights into how state management affects your application's overall performance.
 
 By following these guidelines, you'll be able to maintain a high level of observability in your applications, leading to faster issue resolution and improved overall performance. Remember to adapt these practices to your specific use cases and scale them as your application grows.
+
+---
+
+### 🧪 Testing
+
+This project includes a test suite to ensure the effectiveness of our monitoring and observability guidelines. To run the tests:
+
+1. Ensure you have Node.js and npm installed on your system.
+2. Install the project dependencies:
+   ```
+   npm install
+   ```
+3. Run the tests:
+   ```
+   npm test
+   ```
+
+#### Writing New Tests
+
+When adding new features or modifying existing ones, please follow these guidelines for writing tests:
+
+1. Create new test files in the `tests` directory with the naming convention `*.test.ts`.
+2. Use descriptive test names that clearly indicate what is being tested.
+3. Mock external services and resources using the functions provided in `tests/mocks.ts`.
+4. Ensure your tests cover both success and failure scenarios.
+5. Keep tests isolated and avoid dependencies between test cases.
+
+By maintaining a comprehensive test suite, we can ensure that our monitoring and observability features remain effective as the project evolves.
