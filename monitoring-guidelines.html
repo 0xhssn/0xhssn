@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring and Observability Guidelines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Monitoring and Observability Guidelines</h1>
+    
+    <div class="section">
+        <h2>Overview</h2>
+        <p>This guide provides comprehensive strategies for maintaining and debugging applications built with <code>infra-foundry</code> and <code>jotai-transaction</code> packages. Effective monitoring and observability practices are crucial for ensuring your applications remain performant and easily debuggable.</p>
+    </div>
+
+    <div class="section">
+        <h2>Guidelines for infra-foundry</h2>
+        <h3>1. Logging Best Practices</h3>
+        <ul>
+            <li>Use structured logging with consistent formats across your infrastructure components.</li>
+            <li>Include relevant metadata such as resource IDs, timestamps, and environment information.</li>
+            <li>Implement log levels (DEBUG, INFO, WARN, ERROR) to categorize log messages effectively.</li>
+        </ul>
+
+        <h3>2. Performance Metrics</h3>
+        <ul>
+            <li>Monitor resource utilization (CPU, memory, network) for each infrastructure component.</li>
+            <li>Track API call latencies and error rates for services deployed using infra-foundry.</li>
+            <li>Set up alerts for abnormal resource consumption or service degradation.</li>
+        </ul>
+
+        <h3>3. Tracing</h3>
+        <ul>
+            <li>Implement distributed tracing to understand request flows across your infrastructure.</li>
+            <li>Use unique trace IDs to correlate logs and metrics across different services.</li>
+        </ul>
+
+        <h3>4. Dashboards and Visualization</h3>
+        <ul>
+            <li>Create dashboards that provide an overview of your infrastructure health.</li>
+            <li>Include visualizations for key performance indicators (KPIs) specific to your application.</li>
+        </ul>
+
+        <h3>5. Integration with Cloud Monitoring Services</h3>
+        <ul>
+            <li>Leverage AWS CloudWatch or similar services for centralized monitoring of cloud resources.</li>
+            <li>Use Pulumi's built-in integrations to export metrics to your preferred monitoring platform.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Guidelines for jotai-transaction</h2>
+        <h3>1. State Management Monitoring</h3>
+        <ul>
+            <li>Implement logging for state changes, including the atoms involved and the transaction status.</li>
+            <li>Track the frequency and duration of transactions to identify potential performance bottlenecks.</li>
+        </ul>
+
+        <h3>2. Performance Metrics</h3>
+        <ul>
+            <li>Monitor the time taken for transactions to complete.</li>
+            <li>Track the number of successful vs. failed transactions.</li>
+            <li>Measure the impact of transactions on overall application performance.</li>
+        </ul>
+
+        <h3>3. Debugging Strategies</h3>
+        <ul>
+            <li>Use the Jotai DevTools for real-time inspection of atom values and transaction states.</li>
+            <li>Implement custom error boundaries to catch and log transaction-related errors.</li>
+        </ul>
+
+        <h3>4. Testing and Validation</h3>
+        <ul>
+            <li>Set up unit tests to verify the correctness of complex transactions.</li>
+            <li>Implement integration tests that simulate real-world usage patterns of your state management.</li>
+        </ul>
+
+        <h3>5. Application Performance Monitoring (APM)</h3>
+        <ul>
+            <li>Integrate with APM tools like New Relic or Datadog to get insights into how state management affects your application's overall performance.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>General Best Practices</h2>
+        <ul>
+            <li>Regularly review and analyze logs and metrics to identify trends and potential issues.</li>
+            <li>Implement automated alerting for critical issues and performance thresholds.</li>
+            <li>Conduct periodic load testing to ensure your monitoring systems can handle peak traffic.</li>
+            <li>Keep your monitoring and observability tools up-to-date with the latest features and security patches.</li>
+            <li>Document your monitoring setup and processes for team knowledge sharing and onboarding.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>For more detailed information, please refer to the official documentation of <a href="https://github.com/0xhssn/infra-foundry">infra-foundry</a> and <a href="https://github.com/jotaijs/jotai-transaction">jotai-transaction</a>.</p>
+    </footer>
+</body>
+</html>
