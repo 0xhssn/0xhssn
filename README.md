@@ -32,3 +32,57 @@ Contributions welcome!
 ### 📫 Get in Touch
 - **LinkedIn:** [hhssnn](https://www.linkedin.com/in/hhssnn)
 - **Email:** hassanhamza0101@gmail.com
+
+---
+
+### 🔍 Monitoring and Observability Guidelines
+
+Effective monitoring and observability practices are crucial for maintaining and debugging applications built with `infra-foundry` and `jotai-transaction`. This section provides comprehensive strategies to ensure your applications remain performant and easily debuggable.
+
+#### For infra-foundry
+
+1. **Logging Best Practices:**
+   - Use structured logging with consistent formats across your infrastructure components.
+   - Include relevant metadata such as resource IDs, timestamps, and environment information.
+   - Implement log levels (DEBUG, INFO, WARN, ERROR) to categorize log messages effectively.
+
+2. **Performance Metrics:**
+   - Monitor resource utilization (CPU, memory, network) for each infrastructure component.
+   - Track API call latencies and error rates for services deployed using infra-foundry.
+   - Set up alerts for abnormal resource consumption or service degradation.
+
+3. **Tracing:**
+   - Implement distributed tracing to understand request flows across your infrastructure.
+   - Use unique trace IDs to correlate logs and metrics across different services.
+
+4. **Dashboards and Visualization:**
+   - Create dashboards that provide an overview of your infrastructure health.
+   - Include visualizations for key performance indicators (KPIs) specific to your application.
+
+5. **Integration with Cloud Monitoring Services:**
+   - Leverage AWS CloudWatch or similar services for centralized monitoring of cloud resources.
+   - Use Pulumi's built-in integrations to export metrics to your preferred monitoring platform.
+
+#### For jotai-transaction
+
+1. **State Management Monitoring:**
+   - Implement logging for state changes, including the atoms involved and the transaction status.
+   - Track the frequency and duration of transactions to identify potential performance bottlenecks.
+
+2. **Performance Metrics:**
+   - Monitor the time taken for transactions to complete.
+   - Track the number of successful vs. failed transactions.
+   - Measure the impact of transactions on overall application performance.
+
+3. **Debugging Strategies:**
+   - Use the Jotai DevTools for real-time inspection of atom values and transaction states.
+   - Implement custom error boundaries to catch and log transaction-related errors.
+
+4. **Testing and Validation:**
+   - Set up unit tests to verify the correctness of complex transactions.
+   - Implement integration tests that simulate real-world usage patterns of your state management.
+
+5. **Application Performance Monitoring (APM):**
+   - Integrate with APM tools like New Relic or Datadog to get insights into how state management affects your application's overall performance.
+
+By following these guidelines, you'll be able to maintain a high level of observability in your applications, leading to faster issue resolution and improved overall performance. Remember to adapt these practices to your specific use cases and scale them as your application grows.
