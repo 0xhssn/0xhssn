@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Hassan - Software Engineer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .skill-set {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .skill-category {
+            flex-basis: 48%;
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi there, I'm Hamza Hassan 👋</h1>
+    <p><em>A software (read: <strong>Product</strong>) engineer living one git-commit at a time.</em></p>
+
+    <p>I specialize in building and deploying software solutions in AI and SaaS. From designing secure backend systems to creating seamless user interfaces, I'm passionate about crafting high-quality software. Skilled in event-driven architecture, cloud infrastructure, and RLHF pipelines, I've worked on training and fine-tuning LLMs through human feedback, preference modeling, and Rubric design. I thrive in collaborative environments and enjoy learning new technologies.</p>
+
+    <h2>Open-source Packages</h2>
+    <p>Currently maintaining 2 open-source packages:</p>
+    <ul>
+        <li><a href="https://github.com/0xhssn/infra-foundry">infra-foundry</a>: a platform-agnostic cloud infrastructure components library built with TypeScript and Pulumi, covering AWS, Cloudflare, and more.</li>
+        <li><a href="https://github.com/jotaijs/jotai-transaction">jotai-transaction</a>: a utility package adding transaction support to <a href="https://github.com/pmndrs/jotai">Jotai</a> state management.</li>
+    </ul>
+    <p>Contributions welcome!</p>
+
+    <h2>🛠 My Skill Set</h2>
+    <div class="skill-set">
+        <div class="skill-category">
+            <h3>Languages</h3>
+            <ul>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>Ruby</li>
+                <li>Python</li>
+                <li>GO</li>
+                <li>GraphQL</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Frameworks</h3>
+            <ul>
+                <li>Next.js (React)</li>
+                <li>Node.js (NestJS)</li>
+                <li>Ruby on Rails</li>
+                <li>Gatsby</li>
+                <li>Gin</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Cloud</h3>
+            <ul>
+                <li>AWS</li>
+                <li>Serverless</li>
+                <li>Kubernetes</li>
+                <li>CI/CD pipelines</li>
+                <li>Pulumi</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Databases</h3>
+            <ul>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Amazon RDS</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>📫 Get in Touch</h2>
+    <ul>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hhssnn">hhssnn</a></li>
+        <li><strong>Email:</strong> <a href="mailto:hassanhamza0101@gmail.com">hassanhamza0101@gmail.com</a></li>
+    </ul>
+
+    <h2>🔒 Secure Secrets Management Best Practices</h2>
+    <p>As a software engineer, I always prioritize secure handling of sensitive information. Here are some best practices for managing secrets in your projects:</p>
+    <ol>
+        <li><strong>Use Environment Variables</strong>: Never hardcode secrets in your source code. Instead, use environment variables to store sensitive information.</li>
+        <li><strong>Leverage Secret Management Tools</strong>: Utilize tools like AWS Secrets Manager, HashiCorp Vault, or Azure Key Vault for centralized, secure secret storage and management.</li>
+        <li><strong>Implement Least Privilege Access</strong>: Ensure that only the necessary services and personnel have access to secrets.</li>
+        <li><strong>Rotate Secrets Regularly</strong>: Implement a process for regular rotation of secrets to minimize the impact of potential breaches.</li>
+        <li><strong>Encrypt Secrets at Rest and in Transit</strong>: Always encrypt secrets, both when stored and when transmitted between services.</li>
+        <li><strong>Use Version Control Wisely</strong>: Never commit secrets to version control. Use .gitignore to exclude files containing sensitive information.</li>
+        <li><strong>Audit and Monitor</strong>: Regularly audit access to secrets and monitor for any suspicious activities.</li>
+        <li><strong>Use Secret Detection Tools</strong>: Implement pre-commit hooks or use tools like GitGuardian to detect accidentally committed secrets.</li>
+    </ol>
+    <p>Remember, proper secrets management is crucial for maintaining the security and integrity of your applications and infrastructure.</p>
+</body>
+</html>
