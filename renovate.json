@@ -1,0 +1,161 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":preserveSemverRanges"
+  ],
+  "description": "Renovate configuration for automated dependency updates",
+  "timezone": "UTC",
+  "schedule": [
+    "before 5am on monday"
+  ],
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "assignees": [
+    "0xhssn"
+  ],
+  "reviewers": [
+    "0xhssn"
+  ],
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 2,
+  "updateNotScheduled": false,
+  "semanticCommits": "enabled",
+  "commitMessagePrefix": "chore(deps):",
+  "commitMessageAction": "update",
+  "commitMessageTopic": "{{depName}}",
+  "commitMessageExtra": "to {{newVersion}}",
+  "rebaseWhen": "behind-base-branch",
+  "packageRules": [
+    {
+      "description": "Automerge non-major updates for development dependencies",
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "squash"
+    },
+    {
+      "description": "Automerge patch updates for production dependencies",
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true,
+      "automergeType": "pr",
+      "automergeStrategy": "squash"
+    },
+    {
+      "description": "Group all non-major dependencies updates together",
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    },
+    {
+      "description": "Separate major updates",
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "groupName": "major dependencies",
+      "groupSlug": "major",
+      "automerge": false
+    },
+    {
+      "description": "High priority for security updates",
+      "matchDatasources": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "semanticCommitType": "fix",
+      "semanticCommitScope": "security",
+      "prPriority": 10
+    },
+    {
+      "description": "Disable updates for specific packages if needed",
+      "matchPackageNames": [],
+      "enabled": false
+    },
+    {
+      "description": "TypeScript updates",
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "groupName": "TypeScript",
+      "automerge": false
+    },
+    {
+      "description": "React ecosystem updates",
+      "matchPackagePatterns": [
+        "^react",
+        "^@types/react"
+      ],
+      "groupName": "React ecosystem",
+      "automerge": false
+    },
+    {
+      "description": "Testing libraries",
+      "matchPackagePatterns": [
+        "^@testing-library/",
+        "^jest",
+        "^vitest"
+      ],
+      "groupName": "Testing libraries",
+      "automerge": true
+    },
+    {
+      "description": "ESLint and Prettier",
+      "matchPackagePatterns": [
+        "^eslint",
+        "^prettier",
+        "^@typescript-eslint/"
+      ],
+      "groupName": "Linting and formatting",
+      "automerge": true
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": [
+      "security",
+      "vulnerability"
+    ],
+    "assignees": [
+      "0xhssn"
+    ],
+    "prPriority": 20,
+    "semanticCommitType": "fix",
+    "semanticCommitScope": "security"
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": [
+      "before 5am on monday"
+    ],
+    "commitMessageAction": "update",
+    "commitMessageTopic": "lock file",
+    "automerge": true
+  },
+  "dependencyDashboard": true,
+  "dependencyDashboardTitle": "Dependency Dashboard",
+  "dependencyDashboardHeader": "This dashboard shows all pending dependency updates.",
+  "dependencyDashboardFooter": "Powered by Renovate Bot"
+}

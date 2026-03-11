@@ -1,0 +1,78 @@
+# Dependabot configuration for automated dependency updates
+# This file enables GitHub's Dependabot to automatically check for dependency updates
+# and create pull requests when new versions are available
+
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    # Limit the number of open pull requests
+    open-pull-requests-limit: 10
+    
+    # Assignees for pull requests
+    assignees:
+      - "0xhssn"
+    
+    # Labels to apply to pull requests
+    labels:
+      - "dependencies"
+      - "security"
+      - "automated"
+    
+    # Commit message preferences
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+    
+    # Group updates by dependency type
+    groups:
+      # Group all production dependencies
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+      
+      # Group all development dependencies
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+    
+    # Ignore specific dependencies (add as needed)
+    ignore:
+      # Example: ignore major version updates for specific packages
+      # - dependency-name: "package-name"
+      #   update-types: ["version-update:semver-major"]
+    
+    # Allow Dependabot to update dependencies even if they have vulnerabilities
+    # (it will still create PRs for security updates)
+    allow:
+      - dependency-type: "all"
+    
+    # Rebase strategy for pull requests
+    rebase-strategy: "auto"
+    
+    # Target branch for pull requests
+    target-branch: "main"
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    labels:
+      - "github-actions"
+      - "dependencies"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
