@@ -1,11 +1,9 @@
 ## Hamza Hassan 
 _Full-stack AI product engineer. I build, deploy, and evaluate AI systems end to end._
 
+I design and ship production AI products, cloud infrastructure, and full-stack applications. My stack spans TypeScript, Next.js, NestJS, AWS, and Pulumi. I also train and evaluate AI for top AI research labs — rubric design, preference modeling, and RLHF pipelines.
+
 Building [ResumizeAI](https://resumize.ai), an AI-powered resume and job application platform.
-
-### AI Training and Evaluation
-
-Trained and evaluated AI for top AI research labs. Rubric design, preference modeling, and RLHF pipelines. I understand how models are built, not just how to use them.
 
 ### Open Source
 
