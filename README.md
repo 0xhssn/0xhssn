@@ -1,7 +1,7 @@
 ## Hamza Hassan 
 _Full-stack AI product engineer. I build, deploy, and evaluate AI systems end to end._
 
-Building [ResumizeAI](https://resumize.ai), an AI-powered resume and job application platform. Available for selective contracts and AI evaluation work.
+Building [ResumizeAI](https://resumize.ai), an AI-powered resume and job application platform.
 
 ### AI Training and Evaluation
 
